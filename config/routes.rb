@@ -1,4 +1,7 @@
 LeandroBiscoitoGlobo::Application.routes.draw do
+  resources :articles
+
+
   get 'frontend/:template' => 'frontend#show'
 
   get 'frontend(/index)' => 'frontend#index'
